@@ -8,7 +8,15 @@
  * @returns {array} Devuelve un array nuevo con las personas filtradas por el género del paráemtro gender
  */
 
-function filterByGender(people, gender) {}
+function filterByGender(people, gender) {
+  return people.filter(function(person) {
+    return person.gender === gender
+  })
+}
+//   ==== OTRA FORMA DE HACERLO ====
+// function filterByGender(people, gender) {
+//   return people.filter(person => person.gender == gender)
+// }
 
 const people = [
   {

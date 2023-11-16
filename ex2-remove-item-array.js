@@ -9,7 +9,14 @@
  * @return {array} Devuelve un array con todas las personas MENOS aquella que tenía el idToRemove
  */
 
-function removePersonArray(people, idToRemove) {}
+function removePersonArray(people, idToRemove) {
+  return people.filter(person => person.id !== idToRemove);
+}
+
+// ==== SI QUISIERAMOS BORRAR VARIAS ID's A LA VEZ ====
+// function eliminarPersonasPorIds(arrayPersonas, arrayIds) {
+//   return arrayPersonas.filter(persona => !arrayIds.includes(persona.id));
+// }
 
 const people = [
   {
